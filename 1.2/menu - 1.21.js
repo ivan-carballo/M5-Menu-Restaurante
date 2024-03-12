@@ -286,8 +286,6 @@ async function comenzarInteraccion() {
                             }
                         }
                 
-
-                        console.log('');
             
                         // condicional para saber cual de los tres platos es el que el usuario desea cambiar y hace llamada a las funciones de dicho plato
                         if (cambiar_menu == 1) {
