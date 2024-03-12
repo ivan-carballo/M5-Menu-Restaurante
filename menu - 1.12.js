@@ -1,6 +1,5 @@
 // Librerias y paquetes
 const moment = require('moment');
-//const prompt = require('prompt-sync')({sigint: true});
 const prompt = require('cli-prompt');
 
 // funcion para los prompt asincronos
@@ -182,7 +181,6 @@ async function comenzarInteraccion() {
 
         // Seleccion por parte del usuario y añadir informacion al objeto 'seleccion_menu' y 'seleccion_precio'
         console.log('');
-        //let plato = prompt('Escriba el numero correspondiente a su seleccion: ');
         let plato = await hacerPregunta('Escriba el numero correspondiente a su seleccion: ');
 
         if (plato >=1 && plato <= 4) {
@@ -230,7 +228,6 @@ async function comenzarInteraccion() {
 
     // Dar la opcion al usuario de cambiar unos platos por otros
     async function F_AceptarMenu () {
-       //let menu_aceptado = prompt('¿Es correcta su seleccion de pedido? - Escriba si o no: ');
         let menu_aceptado = await hacerPregunta('¿Es correcta su seleccion de pedido? - Escriba si o no: ');
 
         
@@ -252,7 +249,6 @@ async function comenzarInteraccion() {
                     }
 
                     console.log('');    
-                    //let cambiar_menu = prompt('¿Que numero de plato desea cambiar?');
                     let cambiar_menu = await hacerPregunta('¿Que numero de plato desea cambiar?');
                     console.log('');
         
