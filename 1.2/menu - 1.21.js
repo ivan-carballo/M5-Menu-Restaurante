@@ -17,7 +17,7 @@ comenzarInteraccion();
 async function comenzarInteraccion() {
 
     // Variables con las horas
-    const hora = 14;//moment().format('HH');
+    const hora = moment().format('HH');
     const hora_minuto = moment().format('LT');
 
     // variable con numeros aleatorios - Se puede hacer añadiendo todo de golpe en una variable (Linea 10) como con una funcion (Lineas desde 11 hasta 16)
